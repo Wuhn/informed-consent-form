@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from jinja2 import TemplateNotFound
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 app.config.from_object(__name__)
 
 ##################################################################
